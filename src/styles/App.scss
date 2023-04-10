@@ -1,9 +1,6 @@
-$headerColor: orange;
-$headerTopMargin: 1rem;
-$main-font-color: rgb(25, 0, 255);
-$paragraphColorInContent: rgb(226, 122, 154);
-// $main_font_color: rgb(204, 95, 128);
+@use 'variables' as var;
 
+// $main_font_color: rgb(204, 95, 128);
 div.App {
   background-color: #333;
   color: #ccc;
@@ -11,28 +8,28 @@ div.App {
   padding: 0 1rem;
 
   p {
-    color: $main-font-color;
+    color: var.$main-font-color;
   }
   h1 {
     // color: yellow;
-    color: $headerColor;
-    margin-top: $headerTopMargin;
+    color: var.$headerColor;
+    margin-top: var.$headerTopMargin;
   }
   h2 {
     // color: yellow;
-    color: $headerColor;
-    margin-top: $headerTopMargin;
+    color: var.$headerColor;
+    margin-top: var.$headerTopMargin;
   }
   h3 {
     // color: yellow;
-    $headerColor: rgb(59, 88, 54);
-    color: $headerColor;
-    margin-top: $headerTopMargin;
+    $headerColor: rgb(15, 5, 5);
+    color: var.$headerColor;
+    margin-top: var.$headerTopMargin;
   }
 
   section.content {
     p {
-      color: $paragraphColorInContent;
+      color: var.$paragraphColorInContent;
     }
   }
 }
