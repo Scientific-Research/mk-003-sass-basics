@@ -15,12 +15,11 @@ body {
     // color: yellow;
     color: $headerColor;
     margin-top: $headerTopMargin;
-
   }
   h3 {
     // color: yellow;
+    $headerColor: rgb(112, 216, 91);
     color: $headerColor;
     margin-top: $headerTopMargin;
-
   }
 }
