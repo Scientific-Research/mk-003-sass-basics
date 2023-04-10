@@ -1,13 +1,26 @@
 $headerColor: orange;
+$headerTopMargin: 4rem;
+
 body {
   background-color: #333;
   color: #ccc;
   font-family: sans-serif;
   padding: 0 1rem;
-  h1,
-  h2,
+  h1 {
+    // color: yellow;
+    color: $headerColor;
+    margin-top: $headerTopMargin;
+  }
+  h2 {
+    // color: yellow;
+    color: $headerColor;
+    margin-top: $headerTopMargin;
+
+  }
   h3 {
     // color: yellow;
     color: $headerColor;
+    margin-top: $headerTopMargin;
+
   }
 }
