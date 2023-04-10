@@ -9,6 +9,10 @@ function App() {
       <p>kjsdghjgsddkjfhkjsdkfshdfkjshd</p>
       <h3>More Info</h3>
       <p>kjsdghjgsddkjfhkjsdkfshdfkjshd</p>
+
+      <section className="content">
+        <p>This is a message in the section in the content!</p>
+      </section>
     </div>
   );
 }

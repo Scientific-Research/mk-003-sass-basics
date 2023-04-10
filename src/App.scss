@@ -1,6 +1,7 @@
 $headerColor: orange;
 $headerTopMargin: 1rem;
 $main-font-color: rgb(25, 0, 255);
+$paragraphColorInContent: rgb(226, 122, 154);
 // $main_font_color: rgb(204, 95, 128);
 
 div.App {
@@ -27,5 +28,11 @@ div.App {
     $headerColor: rgb(59, 88, 54);
     color: $headerColor;
     margin-top: $headerTopMargin;
+  }
+
+  section.content {
+    p {
+      color: $paragraphColorInContent;
+    }
   }
 }
