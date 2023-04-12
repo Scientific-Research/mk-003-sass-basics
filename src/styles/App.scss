@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use 'variables_conservative' as *;
 
 // $main_font_color: rgb(204, 95, 128);
 div.App {
@@ -29,7 +29,7 @@ div.App {
 
   section.content {
     p {
-      color: $paragraphColorInContent;
+      color:$warningColor ;
     }
   }
 }
