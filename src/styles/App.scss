@@ -1,4 +1,4 @@
-@use 'variables' as var;
+@use 'variables' as *;
 
 // $main_font_color: rgb(204, 95, 128);
 div.App {
@@ -8,28 +8,28 @@ div.App {
   padding: 0 1rem;
 
   p {
-    color: var.$main-font-color;
+    color: $main-font-color;
   }
   h1 {
     // color: yellow;
-    color: var.$headerColor;
-    margin-top: var.$headerTopMargin;
+    color: $headerColor;
+    margin-top: $headerTopMargin;
   }
   h2 {
     // color: yellow;
-    color: var.$headerColor;
-    margin-top: var.$headerTopMargin;
+    color: $headerColor;
+    margin-top: $headerTopMargin;
   }
   h3 {
     // color: yellow;
-    $headerColor: rgb(15, 5, 5);
-    color: var.$headerColor;
-    margin-top: var.$headerTopMargin;
+    $headerColor: rgb(182, 26, 26);
+    color: $headerColor;
+    margin-top: $headerTopMargin;
   }
 
   section.content {
     p {
-      color: var.$paragraphColorInContent;
+      color: $paragraphColorInContent;
     }
   }
 }
