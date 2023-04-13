@@ -12,6 +12,11 @@ function App() {
 
       <section className="content">
         <p>This is a message in the section in the content!</p>
+        <hr />
+        <button className="primary">Primary</button>
+        <button className="secondary">Secondary</button>
+        <button className="warning">Warning</button>
+
       </section>
     </div>
   );
