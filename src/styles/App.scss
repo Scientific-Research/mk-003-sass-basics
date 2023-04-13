@@ -39,7 +39,7 @@ div.App {
       font-size: 1.5rem;
       background-color: $bgcolor;
       border: 3px solid #aaa;
-      border-radius: 0.5rem
+      border-radius: 0.5rem;
     }
 
     // button.primary {
@@ -66,7 +66,12 @@ div.App {
 
     button.warning {
       // @include btn(lightblue);
-      @include btn($WarningButtonColor);
+      @include btn($warningButtonColor);
+    }
+
+    button.error {
+      // @include btn(lightblue);
+      @include btn($errorButtonColor);
     }
   }
 }
