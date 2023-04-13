@@ -1,5 +1,6 @@
 // @use 'variables_conservative' as *;
 @use 'variables' as *;
+@use 'buttons_colors' as *;
 
 // $main_font_color: rgb(204, 95, 128);
 div.App {
@@ -35,7 +36,15 @@ div.App {
     button{
       margin-right: 1rem;
       font-size: 1.5rem;
-
+    }
+    button.primary{
+      background-color: $primaryButtonColor;
+    }
+    button.secondary{
+      background-color: $secondaryButtonColor;
+    }
+    button.warning{
+     background-color: $WarningButtonColor;
     }
   }
 }
