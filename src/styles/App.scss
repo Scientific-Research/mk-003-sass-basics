@@ -1,6 +1,6 @@
 // @use 'variables_conservative' as *;
-@use 'variables' as *;
-@use 'buttons_colors' as *;
+@use "variables" as *;
+@use "buttons_colors" as *;
 
 // $main_font_color: rgb(204, 95, 128);
 div.App {
@@ -31,13 +31,40 @@ div.App {
 
   section.content {
     p {
-      color:$warningColor ;
+      color: $warningColor;
     }
 
-    @mixin btn($bgcolor){
+    @mixin btn($bgcolor) {
       margin-right: 1rem;
       font-size: 1.5rem;
       background-color: $bgcolor;
+    }
+
+    // button.primary {
+    //   background-color: $primaryButtonColor;
+    // }
+
+    // button.secondary {
+    //   background-color: $secondaryButtonColor;
+    // }
+
+    // button.warning {
+    //   background-color: $WarningButtonColor;
+    // }
+
+    button.primary {
+      // @include btn(lightblue);
+      @include btn($primaryButtonColor);
+    }
+
+    button.secondary {
+      // @include btn(lightblue);
+      @include btn($secondaryButtonColor);
+    }
+
+    button.warning {
+      // @include btn(lightblue);
+      @include btn($WarningButtonColor);
     }
   }
 }
