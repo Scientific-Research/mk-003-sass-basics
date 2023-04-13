@@ -33,18 +33,11 @@ div.App {
     p {
       color:$warningColor ;
     }
-    button{
+
+    @mixin btn($bgcolor){
       margin-right: 1rem;
       font-size: 1.5rem;
-    }
-    button.primary{
-      background-color: $primaryButtonColor;
-    }
-    button.secondary{
-      background-color: $secondaryButtonColor;
-    }
-    button.warning{
-     background-color: $WarningButtonColor;
+      background-color: $bgcolor;
     }
   }
 }
