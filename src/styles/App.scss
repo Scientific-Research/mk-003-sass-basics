@@ -45,7 +45,7 @@ div.App {
       padding: 0.5rem;
       border-radius: 0.5rem;
       &:hover {
-        background-color: darken($bgcolor, 30%);
+        background-color: lighten($bgcolor, 30%);
       }
     }
 
