@@ -47,11 +47,11 @@ div.App {
       &:hover {
         background-color: lighten($bgcolor, 30%);
       }
-      &-disabled{
-        // background-color: opacity(0.9)
-        background-color: lighten($bgcolor, 30%);
-        border: 3px solid #ccc
+      &-disabled {
+        // background-color: lighten($bgcolor, 30%);
+        background-color: transparentize($bgcolor, 0.5);
 
+        border: 3px solid #ccc;
       }
     }
 
