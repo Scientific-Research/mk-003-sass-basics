@@ -44,6 +44,9 @@ div.App {
 
       padding: 0.5rem;
       border-radius: 0.5rem;
+      &:hover {
+        background-color: yellow;
+      }
     }
 
     // button.primary {
