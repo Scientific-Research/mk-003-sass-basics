@@ -47,6 +47,12 @@ div.App {
       &:hover {
         background-color: lighten($bgcolor, 30%);
       }
+      &-disabled{
+        // background-color: opacity(0.9)
+        background-color: lighten($bgcolor, 30%);
+        border: 3px solid #ccc
+
+      }
     }
 
     // button.primary {
