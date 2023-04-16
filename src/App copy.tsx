@@ -1,12 +1,6 @@
 import "./styles/App.scss";
-import { useState } from "react";
 
 function App() {
-  const [isDisabled, setIsDisabled] = useState(false);
-
-  const handleToggleDisabled = () => {
-    setIsDisabled(!isDisabled);
-  };
   return (
     <div className="App">
       <h1>Info Site</h1>
@@ -19,24 +13,18 @@ function App() {
       <section className="content">
         <p>This is a message in the section in the content!</p>
         <hr />
-        <p>{isDisabled ? "currently disabled" : "currently enabled"}</p>
-        <button onClick={() => handleToggleDisabled()}>Toggle</button>
-        <hr />
-
-        <button className={isDisabled ? "primary primary-disabled" : "primary"}>
-          Primary{" "}
-        </button>
+        <button className="primary">Primary</button>
         <button className="secondary">Secondary</button>
         <button className="warning">Warning</button>
         <button className="error">Error</button>
         <button className="info">Info</button>
 
-        {/* <br />
+        <br />
         <button className="primary primary-disabled">Primary</button>
         <button className="secondary secondary-disabled">Secondary</button>
         <button className="warning warning-disabled">Warning</button>
         <button className="error error-disabled">Error</button>
-        <button className="info info-disabled">Info</button> */}
+        <button className="info info-disabled">Info</button>
       </section>
 
       <hr />
