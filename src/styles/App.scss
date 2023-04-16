@@ -34,7 +34,7 @@ div.App {
       color: $warningColor;
     }
 
-    @mixin makeButton($name, $bgcolor, $borderColor: #555) {
+    @mixin makeButton($name, $bgcolor, $borderColor: yellow) {
       .#{$name} {
         font-size: 1.5rem;
         background-color: $bgcolor;
@@ -68,7 +68,7 @@ div.App {
     //   background-color: $WarningButtonColor;
     // }
 
-    // @include btn(lightblue); 
+    // @include btn(lightblue);
 
     $buttons: primary lightblue, secondary lightgreen, warning orange,
       error tomato, info purple;
