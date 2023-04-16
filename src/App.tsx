@@ -3,9 +3,13 @@ import { useState } from "react";
 
 function App() {
   const [isDisabled, setIsDisabled] = useState(false);
+  const [showAsError, setShowAsError] = useState(false);
 
   const handleToggleDisabled = () => {
     setIsDisabled(!isDisabled);
+  };
+  const handleshowAsErrorButton = () => {
+    setShowAsError(!showAsError);
   };
   return (
     <div className="App">
@@ -17,7 +21,16 @@ function App() {
       <p>kjsdghjgsddkjfhkjsdkfshdfkjshd</p>
 
       <section className="content">
-        <p>This is a message in the section in the content!</p>
+        <p
+          style={
+            showAsError
+              ? { backgroundColor: "tomato", color: "red" }
+              : { backgroundColor: "green", color: "white" }
+          }
+        >
+          This is a message in the section in the content!
+        </p>
+        <button onClick={() => handleshowAsErrorButton()}>Show as Error</button>
         <hr />
         <p>{isDisabled ? "currently disabled" : "currently enabled"}</p>
         <button onClick={() => handleToggleDisabled()}>Toggle</button>
