@@ -22,15 +22,27 @@ function App() {
         <p>{isDisabled ? "currently disabled" : "currently enabled"}</p>
         <button onClick={() => handleToggleDisabled()}>Toggle</button>
         <hr />
-
         <button className={isDisabled ? "primary primary-disabled" : "primary"}>
           Primary{" "}
         </button>
-        <button className="secondary">Secondary</button>
+        <button
+          className={isDisabled ? "secondary secondary-disabled" : "secondary"}
+        >
+          Secondary{" "}
+        </button>{" "}
+        <button className={isDisabled ? "warning warning-disabled" : "warning"}>
+          Warning{" "}
+        </button>{" "}
+        <button className={isDisabled ? "error error-disabled" : "error"}>
+          Error{" "}
+        </button>{" "}
+        <button className={isDisabled ? "info info-disabled" : "info"}>
+          Info{" "}
+        </button>
+        {/* <button className="secondary">Secondary</button>
         <button className="warning">Warning</button>
         <button className="error">Error</button>
-        <button className="info">Info</button>
-
+        <button className="info">Info</button> */}
         {/* <br />
         <button className="primary primary-disabled">Primary</button>
         <button className="secondary secondary-disabled">Secondary</button>
