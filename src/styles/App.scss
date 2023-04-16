@@ -99,6 +99,7 @@ div.App {
   }
   $hsizes: 4rem, 3.5rem, 3rem, 2.5rem, 2rem, 1.5rem;
   $hcolors: navy, blue, lightblue, green, orange, yellow;
+  $wrapped: nowrap, wrap, nowrap, wrap, nowrap, nowrap;
 
   @for $i from 1 through length($hsizes) {
     h#{$i}.special {
@@ -106,6 +107,18 @@ div.App {
       color: nth($hcolors, $i);
       font-style: normal;
       margin: 0;
+      @if nth($wrapped, $i) == "wrap" {
+        // color: rgb(185, 18, 46);
+        &:before {
+          content: "(";
+        }
+        &:after {
+          content: ")";
+        }
+      }
+      // @else {
+      //   color: chocolate;
+      // }
     }
   }
 }
