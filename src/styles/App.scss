@@ -68,10 +68,10 @@ div.App {
     //   background-color: $WarningButtonColor;
     // }
 
-    // @include btn(lightblue);
+    // @include btn(lightblue); 
 
     $buttons: primary lightblue, secondary lightgreen, warning orange,
-      error tomato;
+      error tomato, info purple;
 
     @each $name, $bgcolor in $buttons {
       @include makeButton($name, $bgcolor);
