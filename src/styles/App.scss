@@ -98,12 +98,12 @@ div.App {
     // }
   }
   $hsizes: 4rem, 3.5rem, 3rem, 2.5rem, 2rem, 1.5rem;
-  $hcolors: navy, blue, lightblue;
+  $hcolors: navy, blue, lightblue, green, orange, yellow;
 
   @for $i from 1 through length($hsizes) {
     h#{$i}.special {
       font-size: nth($hsizes, $i);
-      // color: nth($hcolors, $i);
+      color: nth($hcolors, $i);
       font-style: normal;
       margin: 0;
     }
